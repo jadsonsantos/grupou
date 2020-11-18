@@ -1,0 +1,433 @@
+body {
+    margin: 0;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url(images/grafismo_backgroud.png) no-repeat fixed;
+    background-color: #259cd9;
+    background-size: 700px;
+    background-position: left;
+    background-position-y: 400px;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#header {
+    background-color: #fff;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100vw;
+}
+
+#header #logo {
+    flex: 2;
+    margin-left: -7px;
+}
+
+#header #menu {
+    flex: 3;
+    margin-top: 8px;
+}
+
+#header #menu ul#links {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    color: #e85989;
+}
+
+#header #menu ul#links li {
+    flex: 1
+}
+
+#header #menu ul#links li a {
+    color: #e85989;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+#header #menu ul#links li a:after {
+    content: ' ';
+    border-bottom: 2px solid #fff;
+    height: 2px;
+    display: flex;
+    width: 15%;
+    padding-top: 5px;
+    margin-left: 20px;
+    padding-right: 67%;
+}
+
+#header #menu ul#links li a.active {
+    color: #AC3376;
+    font-weight: bold;
+}
+
+#header #menu ul#links li a:hover {
+    color: #AC3376;
+}
+
+#header #menu ul#links li a:hover:after,
+#header #menu ul#links li a.active:after {
+    content: ' ';
+    border-bottom: 2px solid #f59e3a;
+    height: 2px;
+    display: flex;
+    width: 15%;
+    padding-top: 5px;
+}
+
+#header #profile {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 300px;
+}
+
+#header #profile #containerData {
+    display: flex;
+    flex-direction: column;
+}
+
+#header #profile #containerData p {
+    font-size: 13px;
+    line-height: 4px;
+    color: #e85989;
+    text-align: right;
+}
+
+#header #profile #containerData p.small {
+    font-size: 11px;
+}
+
+#header #profile #avatar {
+    padding: 0px 8px;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #aaa;
+}
+
+#content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+#content #containerTitle {
+    color: #fff;
+    font-size: 30px;
+}
+
+#content #containerMain {
+    flex: 2;
+    display: flex;
+    min-height: 600px;
+    margin-top: 10px;
+}
+
+#content #containerMain #containerLeft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#content #containerMain #containerLeft h5 {
+    color: gray;
+}
+
+#content #containerMain #containerLeft #skillHtml #skillaluno {
+    width: 80%;
+    background-color: #2196F3;
+    border-radius: 10px;
+    font-size: x-small;
+    margin-top: 10px;
+}
+
+#content #containerMain #containerLeft #skillHtml #skillturma {
+    width: 70%;
+    background-color: #E53772;
+    border-radius: 10px;
+    font-size: x-small;
+    margin-top: 10px;
+}
+
+#content #containerMain #containerLeft #skillHtml #skillaluno span {
+    color: #2196F3;
+    padding-left: 105%;
+}
+
+#content #containerMain #containerLeft #skillHtml #skillturma span {
+    color: #E53772;
+    padding-left: 105%;
+}
+
+#content #containerMain #containerLeft #skillManipulacao_imagem #skillaluno {
+    width: 50%;
+    background-color: #2196F3;
+    border-radius: 10px;
+    font-size: x-small;
+    margin-top: 10px;
+}
+
+#content #containerMain #containerLeft #skillManipulacao_imagem #skillturma {
+    width: 65%;
+    background-color: #E53772;
+    border-radius: 10px;
+    font-size: x-small;
+    margin-top: 10px;
+}
+
+#content #containerMain #containerLeft #skillManipulacao_imagem #skillaluno span {
+    color: #2196F3;
+    padding-left: 105%;
+}
+
+#content #containerMain #containerLeft #skillManipulacao_imagem #skillturma span {
+    color: #E53772;
+    padding-left: 105%;
+}
+
+#content #containerMain #containerLeft #skillPrototipagem #skillaluno {
+    width: 90%;
+    background-color: #2196F3;
+    border-radius: 10px;
+    font-size: x-small;
+    margin-top: 10px;
+}
+
+#content #containerMain #containerLeft #skillPrototipagem #skillturma {
+    width: 60%;
+    background-color: #E53772;
+    border-radius: 10px;
+    font-size: x-small;
+    margin-top: 10px;
+}
+
+#content #containerMain #containerLeft #skillPrototipagem #skillaluno span {
+    color: #2196F3;
+    padding-left: 105%;
+}
+
+#content #containerMain #containerLeft #skillPrototipagem #skillturma span {
+    color: #E53772;
+    padding-left: 105%;
+}
+
+#content #containerMain #containerLeft #skillIlustracao #skillaluno {
+    width: 63%;
+    background-color: #2196F3;
+    border-radius: 10px;
+    font-size: x-small;
+    margin-top: 10px;
+}
+
+#content #containerMain #containerLeft #skillIlustracao #skillturma {
+    width: 87%;
+    background-color: #E53772;
+    border-radius: 10px;
+    font-size: x-small;
+    margin-top: 10px;
+}
+
+#content #containerMain #containerLeft #skillIlustracao #skillaluno span {
+    color: #2196F3;
+    padding-left: 105%;
+}
+
+#content #containerMain #containerLeft #skillIlustracao #skillturma span {
+    color: #E53772;
+    padding-left: 105%;
+}
+
+#content #containerMain #containerLeft #skillWireframe #skillaluno {
+    width: 63%;
+    background-color: #2196F3;
+    border-radius: 10px;
+    font-size: x-small;
+    margin-top: 10px;
+}
+
+#content #containerMain #containerLeft #skillWireframe #skillturma {
+    width: 79%;
+    background-color: #E53772;
+    border-radius: 10px;
+    font-size: x-small;
+    margin-top: 10px;
+}
+
+#content #containerMain #containerLeft #skillWireframe #skillaluno span {
+    color: #2196F3;
+    padding-left: 105%;
+}
+
+#content #containerMain #containerLeft #skillWireframe #skillturma span {
+    color: #E53772;
+    padding-left: 105%;
+}
+
+#content #containerMain #containerRight {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+#content #containerMain #containerRight #containerTopStudents {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#content #containerMain #containerRight #containerTopStudents #moldura-skill {
+    display: inline-block;
+}
+
+#content #containerMain #containerRight #containerTopStudents h5 {
+    padding-left: 45px;
+}
+
+#content #containerMain #containerRight #containerTopStudents h6 {
+    padding-left: 85px;
+}
+
+.circle {
+    flex: 2;
+    background-color: #aaa;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0px 0px 0px 0px;
+}
+
+
+.circle img {
+    flex: 1;
+    display: flex;
+    bottom: 0;s
+    width: 20%;
+    padding-top: 0px;
+}
+
+#content #containerMain #containerRight #containerSkills {
+    flex: 1;
+    display: flex;
+}
+
+#content #containerMain #containerRight #containerSkills #hardSkills {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#content #containerMain #containerRight #containerSkills #softSkills {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#content #containerSubjects {
+    flex: 1;
+    display: flex;
+    min-height: 300px;
+}
+
+#footer {
+    background-color: #491648;
+    height: 120px;
+    display: flex;
+}
+
+#footer #logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+#footer #about {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer #about p {
+    font-size: 13px;
+    line-height: 1px;
+    color: #fff;
+}
+
+#footer #social {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#modal-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-color: rgb(51, 51, 51, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+}
+
+#modal {
+    width: 35vw;
+    height: 60vh;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width:1200px) {
+    .centered {
+        padding: 0px 250px;
+    }
+}
+
+
+/* DASHBOARD */
+
+.box {
+    background-color: #fff;
+    height: 100%;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #333;
+    margin: 10px;
+    flex-direction: column;
+    flex: 1;
+}
+
+.shadow {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12)
+
+}
