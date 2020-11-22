@@ -10,10 +10,48 @@
 
 
     <div id="modal-overlay">
-        <div id="modal">Questão do dia</div>
-
-         <p>HTML</p>
-         </div>
+        <div id="modal">
+            <header class="modal-header">
+                <div class="modal-header-question">
+                    <h4 class="box-title">Questão do dia</h4>
+                    <p>HTML</p>
+                </div>
+                <div class="stopwatch">
+                    <div class="circle-border d90">
+                        <div class="circle-content"> 
+                            <p class="text">Tempo</p>
+                            <p class="countdown">32</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="modal-main-content">
+                <h4 class="question">Que tipo de linguagem o HTML é?</h4>
+                <div class="modal-content-wrapper">
+                    <section class="modal-question">
+                        <ul>
+                            <li class="option">
+                                <span>A.</span>De programação
+                            </li>
+                            <li class="option">
+                                <span>B.</span>De marcação
+                            </li>
+                            <li class="option">
+                                <span>C.</span>Figura de linguagem
+                            </li>
+                            <li class="option">
+                                <span>D.</span>De português
+                            </li>
+                        </ul>
+                        <button class="submit-answer" type="submit">Confirmar</button>
+                    </section>
+                    <section class="modal-feedback">
+                        <h4 class="hit-percentage">97%</h4>
+                        <p>dos alunos<br> acertaram esta<br> questão</p>
+                    </section>
+                </div>
+            </main>
+        </div>
     </div>
 
 
@@ -45,7 +83,7 @@
             <div id="profile">
                 <div id="containerData">
                     <div>
-                        <p>Bernardo Cavalcante</p>
+                        <p class="profile-name">Bernardo Cavalcante</p>
                         <p class="small">Aluno</p>
                     </div>
                 </div>
@@ -57,115 +95,274 @@
         </div>
 
         <div id="content" class="centered">
-            <div id="containerTitle">
+            <h2 id="containerTitle">
                 Dashboard
-            </div>
+            </h2>
             <div id="containerMain">
                 <div id="containerLeft">
                     <div class="box shadow">
-                        <h4>Comparativo de skills</h4>
-                        <div id="skillHtml">
+                        <h4 class="box-title">Comparativo de skills</h4>
+                        <div class="skill" id="skillHtml">
                             <h5>HTML</h5>
-                            <div id="skillaluno"><span>Você</span></div>
-                            <div id="skillturma"><span>Turma</span></div>
+                            <div class="skill-bar aluno">
+                                <span id="skillaluno"></span>
+                                <span>Você</span>
+                            </div>
+                            <div class="skill-bar turma">
+                                <span id="skillturma"></span>
+                                <span>Turma</span>
+                            </div>
                         </div>
-                        <div id="skillManipulacao_imagem">
+                        <div class="skill" id="skillManipulacao_imagem">
                             <h5>Manipulação de imagem</h5>
-                            <div id="skillaluno"><span>Você</span></div>
-                            <div id="skillturma"><span>Turma</span></div>
+                            <div class="skill-bar aluno">
+                                <span id="skillaluno"></span>
+                                <span>Você</span>
+                            </div>
+                            <div class="skill-bar turma">
+                                <span id="skillturma"></span>
+                                <span>Turma</span>
+                            </div>
                         </div>
-                        <div id="skillPrototipagem">
+                        <div class="skill" id="skillPrototipagem">
                             <h5>Prototipagem</h5>
-                            <div id="skillaluno"><span>Você</span></div>
-                            <div id="skillturma"><span>Turma</span></div>
+                            <div class="skill-bar aluno">
+                                <span id="skillaluno"></span>
+                                <span>Você</span>
+                            </div>
+                            <div class="skill-bar turma">
+                                <span id="skillturma"></span>
+                                <span>Turma</span>
+                            </div>
                         </div>
-                        <div id="skillIlustracao">
+                        <div class="skill" id="skillIlustracao">
                             <h5>Ilustração</h5>
-                            <div id="skillaluno"><span>Você</span></div>
-                            <div id="skillturma"><span>Turma</span></div>
+                            <div class="skill-bar aluno">
+                                <span id="skillaluno"></span>
+                                <span>Você</span>
+                            </div>
+                            <div class="skill-bar turma">
+                                <span id="skillturma"></span>
+                                <span>Turma</span>
+                            </div>
                         </div>
-                        <div id="skillWireframe">
+                        <div class="skill" id="skillWireframe">
                             <h5>Wireframe</h5>
-                            <div id="skillaluno"><span>Você</span></div>
-                            <div id="skillturma"><span>Turma</span></div>
+                            <div class="skill-bar aluno">
+                                <span id="skillaluno"></span>
+                                <span>Você</span>
+                            </div>
+                            <div class="skill-bar turma">
+                                <span id="skillturma"></span>
+                                <span>Turma</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div id="containerRight">
                     <div id="containerTopStudents">
                         <div class="box shadow">
-                            <h4>Alunos top skills</h4>
-
-                            <div id="moldura-skill">
-
-                                <div class="circle"> 
-                                    <img src="https://i.stack.imgur.com/atUuf.png"
-                                    width="108" height="80" border="0" alt="" style="display:block; border:none;">
-                                </div>
-                                <h5>Juliano Almeida</h5>
-                                <h6>HTML</h6>
-                            </div>
-                            <div id="moldura-skill">
-                                <div class="circle">
-                                    <img src="https://i.stack.imgur.com/atUuf.png"
-                                    width="108" height="80" border="0" alt="" style="display:block; border:none;">
-                                </div>
-                                <h5>Juliano Almeida</h5>
-                                <h6>Ilustração</h6>
-                            </div>
-                            <div id="moldura-skill">
-                                <div class="circle">
-                                    <img src="https://i.stack.imgur.com/atUuf.png"
-                                    width="108" height="80" border="0" alt="" style="display:block; border:none;">
-                                </div>
-                                <h5>Juliano Almeida</h5> 
-                                <h6>C#</h6>
-
+                            <h2 class="box-title">Alunos top skills</h2>
+                            <div class="profiles">
                                 <div id="moldura-skill">
-                                <div class="circle">
-                                    <img src="https://i.stack.imgur.com/atUuf.png"
-                                    width="108" height="80" border="0" alt="" style="display:block; border:none;">
+                                    <div class="circle-border d90">
+                                        <div class="circle-content"> 
+                                            <img src="images/profile-photo-1.jpg" alt="">
+                                            <span class="score">9,0</span>
+                                        </div>
+                                    </div>
+                                    <h5>Juliano Almeida</h5>
+                                    <h6>HTML</h6>
                                 </div>
-                                <h5>Juliano Almeida</h5>
-                                <h6>HTML</h6>
-                            </div>
-                            <div id="moldura-skill">
-                                <div class="circle">
-                                    <img src="https://i.stack.imgur.com/atUuf.png"
-                                    width="108" height="80" border="0" alt="" style="display:block; border:none;">
+                                <div id="moldura-skill">
+                                    <div class="circle-border d75">
+                                        <div class="circle-content"> 
+                                            <img src="images/profile-photo-2.png" alt="">
+                                            <span class="score">7,5</span>
+                                        </div>
+                                    </div>
+                                    <h5>Gustavo Assis</h5>
+                                    <h6>Ilustração</h6>
                                 </div>
-                                <h5>Juliano Almeida</h5>
-                                <h6>Ilustração</h6>
-                            </div>
-                          
-
+                                <div id="moldura-skill">
+                                    <div class="circle-border d90">
+                                        <div class="circle-content"> 
+                                            <img src="images/profile-photo-3.jpg" alt="">
+                                            <span class="score">9,0</span>
+                                        </div>
+                                    </div>
+                                    <h5>Fernando Leme</h5> 
+                                    <h6>C#</h6>
+                                </div>
+                                <div id="moldura-skill">
+                                    <div class="circle-border d75">
+                                        <div class="circle-content"> 
+                                            <img src="images/profile-photo-4.png" alt="">
+                                            <span class="score">7,5</span>
+                                        </div>
+                                    </div>
+                                    <h5>Gabriela Silva</h5>
+                                    <h6>Prototipagem</h6>
+                                </div>
+                                <div id="moldura-skill">
+                                    <div class="circle-border d90">
+                                        <div class="circle-content"> 
+                                            <img src="images/profile-photo-5.jpg" alt="">
+                                            <span class="score">9,0</span>
+                                        </div>
+                                    </div>
+                                    <h5>Carla Nogueira</h5>
+                                    <h6>Wireframe</h6>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div id="containerSkills">
                         <div id="hardSkills">
                             <div class="box shadow">
-                                <h5>Minhas top hasrdskills</h5>
-                                <div class="c100 p25">
-                                    <span>HTML</span>
-                                    <div class="slice">
-                                        <div class="bar"></div>
-                                        <div class="fill"></div>
+                                <h5 class="box-title">Minhas top hard skills</h5>
+                                <section class="box-content">
+                                    <div class="circle-border d90">
+                                        <div class="circle-content"> 
+                                            <span>HTML</span>
+                                            <span class="score">9,0</span>
+                                        </div>
                                     </div>
-                                </div>
+                                    <div class="circle-border d75">
+                                        <div class="circle-content"> 
+                                            <span>Ilustração</span>
+                                            <span class="score">7,5</span>
+                                        </div>
+                                    </div>
+                                    <div class="circle-border d70">
+                                        <div class="circle-content"> 
+                                            <span>Wireframe</span>
+                                            <span class="score">7,0</span>
+                                        </div>
+                                    </div>
+                                </section>
                             </div>
 
                         </div>
                         <div id="softSkills">
-                            <div class="box shadow">Minhas top softskills</div>
+                            <div class="box shadow">
+                                <h5 class="box-title">Minhas soft skills</h5>
+                                <ul>
+                                    <li class="skill">Liderança</li>
+                                    <li class="skill">Empatia</li>
+                                    <li class="skill">Proatividade</li>
+                                    <li class="skill">Gestão de conflitos</li>
+                                    <li class="skill">Comunicação</li>
+                                    <li class="skill">Interpessoalidade</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="containerSubjects">
-                <div class="box shadow">Gestão de Design</div>
-                <div class="box shadow">Fotografia</div>
-                <div class="box shadow">Webdesign</div>
+                <div class="box shadow">
+                    <header class="subjects-header">
+                        <h5 class="box-title">Gestão de Design</h5>
+                        <a class="see-all" href="#">Ver mais</a>
+                    </header>
+                    <h6 class="subtitle">AV1</h6>
+                    <div class="students-list">
+                        <div class="student-item"> 
+                            <img src="images/profile-photo-1.jpg" alt="Student">
+                            <span class="status checked"></span>
+                        </div>
+                        <div class="student-item">
+                            <img src="images/profile-photo-2.png" alt="Student">
+                            <span class="status checked"></span>
+                        </div>
+                        <div class="student-item">
+                            <img src="images/profile-photo-4.png" alt="Student">
+                        </div>
+                        <div class="student-item"> 
+                            <img src="images/profile-photo-2.png" alt="Student">
+                        </div>
+                        <div class="student-item">
+                            <img src="images/profile-photo-4.png" alt="Student">
+                            <span class="status checked"></span>
+                        </div>
+                    </div>
+                    <footer class="tasks-summary">
+                        <h6>Tarefas concluídas</h6>
+                        <div class="progress">
+                            <span class="progress-bar p78"></span>
+                            <span class="progress-number">78%</span>
+                        </div>
+                    </footer>
+                </div>
+                <div class="box shadow">
+                    <header class="subjects-header">
+                        <h5 class="box-title">Fotografia</h5>
+                        <a class="see-all" href="#">Ver mais</a>
+                    </header>
+                    <h6 class="subtitle">AV1</h6>
+                    <div class="students-list">
+                        <div class="student-item"> 
+                            <img src="images/profile-photo-1.jpg" alt="Student">
+                            <span class="status checked"></span>
+                        </div>
+                        <div class="student-item">
+                            <img src="images/profile-photo-2.png" alt="Student">
+                            <span class="status checked"></span>
+                        </div>
+                        <div class="student-item">
+                            <img src="images/profile-photo-4.png" alt="Student">
+                        </div>
+                        <div class="student-item"> 
+                            <img src="images/profile-photo-2.png" alt="Student">
+                        </div>
+                        <div class="student-item">
+                            <img src="images/profile-photo-4.png" alt="Student">
+                            <span class="status checked"></span>
+                        </div>
+                    </div>
+                    <footer class="tasks-summary">
+                        <h6>Tarefas concluídas</h6>
+                        <div class="progress">
+                            <span class="progress-bar p62"></span>
+                            <span class="progress-number">62%</span>
+                        </div>
+                    </footer>
+                </div>
+                <div class="box shadow">
+                    <header class="subjects-header">
+                        <h5 class="box-title">Webdesign</h5>
+                        <a class="see-all" href="#">Ver mais</a>
+                    </header>
+                    <h6 class="subtitle">AV1</h6>
+                    <div class="students-list">
+                        <div class="student-item"> 
+                            <img src="images/profile-photo-1.jpg" alt="Student">
+                            <span class="status checked"></span>
+                        </div>
+                        <div class="student-item">
+                            <img src="images/profile-photo-2.png" alt="Student">
+                            <span class="status checked"></span>
+                        </div>
+                        <div class="student-item">
+                            <img src="images/profile-photo-4.png" alt="Student">
+                        </div>
+                        <div class="student-item"> 
+                            <img src="images/profile-photo-2.png" alt="Student">
+                        </div>
+                        <div class="student-item">
+                            <img src="images/profile-photo-4.png" alt="Student">
+                            <span class="status checked"></span>
+                        </div>
+                    </div>
+                    <footer class="tasks-summary">
+                        <h6>Tarefas concluídas</h6>
+                        <div class="progress">
+                            <span class="progress-bar p93"></span>
+                            <span class="progress-number">93%</span>
+                        </div>
+                    </footer>
+                </div>
             </div>
 
         </div>
