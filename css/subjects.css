@@ -1,0 +1,96 @@
+#containerSubjects .subtitle {
+    margin: 10px 0 30px;
+    font-size: 15px;
+    color: gray;
+}
+
+.subjects-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subjects-header .see-all {
+    padding: 8px 22px;
+    border: 2px solid var(--pink-color);
+    border-radius: 5px;
+    
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--pink-color);
+    transition: background-color ease .3s;
+}
+
+.see-all:hover {
+    background-color: var(--pink-color);
+    color: #fff;
+}
+
+.subjects-header .box-title {
+    margin: 0;
+}
+
+.students-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.students-list img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.student-item {
+    /* margin-right: 30px; */
+    position: relative;
+}
+
+.status.checked {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background-color: #1bc71b;
+    width: 15px;
+    height: 15px;
+}
+
+/* FOOTER */
+
+.tasks-summary h6 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+}
+
+.progress-number {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--orange-color);
+}
+
+.progress-bar {
+    margin-right: 10px;
+    height: 8px;
+    background-color: var(--orange-color);
+    border-radius: 5px;
+}
+
+.progress-bar.p62 {
+    width: 62%;
+}
+.progress-bar.p78 {
+    width: 78%;
+}
+.progress-bar.p93 {
+    width: 93%;
+}

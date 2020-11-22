@@ -1,0 +1,11 @@
+.box-title {
+    margin: 10px 0 30px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.box-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

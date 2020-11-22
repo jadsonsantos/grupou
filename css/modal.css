@@ -1,0 +1,129 @@
+#modal .box-title {
+    margin-bottom: 10px;
+}
+
+/* HEADER */
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-header-question p {
+    color: gray;
+}
+
+.modal-header .stopwatch {
+    color: var(--pink-color);
+}
+
+.modal-header .stopwatch .text {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.modal-header .stopwatch .countdown {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.modal-header .stopwatch .circle-content {
+    flex-direction: column;
+}
+
+/* MAIN */
+.modal-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* QUESTION */
+
+.modal-main-content h4 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.modal-main-content .question {
+    margin-bottom: 20px;
+}
+
+.modal-question {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.modal-question .option {
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    padding: 15px 10px;
+    
+    font-size: 14px;
+    color: gray;
+
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.modal-question .option:hover {
+    border: 1px solid #808080;
+    color: #808080;
+}
+
+.modal-question .option span {
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.modal-question .option:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+.modal-question .submit-answer {
+    margin: 30px auto 0;
+    padding: 15px 50px;
+    display: block;
+    cursor: pointer;
+    height: 50px;
+
+    background-color: var(--pink-color);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+
+    font-size: 14px;
+    font-weight: 500;
+    transition: all ease .3s;
+}
+
+.modal-question .submit-answer:hover {
+    opacity: .9;
+}
+
+
+/* FEEDBACK */
+
+.modal-feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    padding: 0 35px;
+    height: 240px;
+
+    border: 1px solid #2ade2a;
+    border-radius: 10px;
+
+    color: #2ade2a;
+}
+
+.modal-feedback p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.modal-feedback .hit-percentage {
+    font-size: 38px;
+}
