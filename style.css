@@ -1,7 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import 'css/reset.css';
+@import 'css/vars.css';
+@import 'css/box.css';
+@import 'css/circle.css';
+@import 'css/subjects.css';
+@import 'css/score.css';
+@import 'css/modal.css';
+
+
+
+
 body {
     margin: 0;
     color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: url(images/grafismo_backgroud.png) no-repeat fixed;
     background-color: #259cd9;
     background-size: 700px;
@@ -28,6 +40,7 @@ a {
     box-sizing: border-box;
     position: fixed;
     width: 100vw;
+    z-index: 100;
 }
 
 #header #logo {
@@ -48,24 +61,24 @@ a {
 }
 
 #header #menu ul#links li {
-    flex: 1
+    flex: 1;
+    text-align: center;
 }
 
 #header #menu ul#links li a {
     color: #e85989;
     font-size: 15px;
-    margin-left: 20px;
+    font-weight: 500;
 }
 
 #header #menu ul#links li a:after {
     content: ' ';
     border-bottom: 2px solid #fff;
     height: 2px;
+    width: 50px;
+    padding-top: 10px;
     display: flex;
-    width: 15%;
-    padding-top: 5px;
-    margin-left: 20px;
-    padding-right: 67%;
+    margin: auto;
 }
 
 #header #menu ul#links li a.active {
@@ -82,9 +95,8 @@ a {
     content: ' ';
     border-bottom: 2px solid #f59e3a;
     height: 2px;
-    display: flex;
-    width: 15%;
-    padding-top: 5px;
+    width: 50px;
+    padding-top: 10px;
 }
 
 #header #profile {
@@ -101,14 +113,18 @@ a {
 }
 
 #header #profile #containerData p {
-    font-size: 13px;
-    line-height: 4px;
     color: #e85989;
     text-align: right;
 }
 
+#profile .profile-name {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
 #header #profile #containerData p.small {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 #header #profile #avatar {
@@ -131,17 +147,18 @@ a {
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin-top: 90px;
+    margin-top: 70px;
     margin-bottom: 50px;
 }
 
 #content #containerTitle {
+    margin: 70px 0 25px;
+    font-size: 50px;
+    font-weight: 500;
     color: #fff;
-    font-size: 30px;
 }
 
 #content #containerMain {
-    flex: 2;
     display: flex;
     min-height: 600px;
     margin-top: 10px;
@@ -153,16 +170,46 @@ a {
     flex-direction: column;
 }
 
+#containerLeft .skill {
+    margin-bottom: 40px;
+}
+
+#containerLeft .skill-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.skill-bar.aluno {
+    color: #259cd9;
+}
+
+.skill-bar.turma {
+    color: #E53772;
+}
+
+.skill-bar span:first-of-type {
+    margin-right: 10px;
+    height: 8px;
+}
+
+.skill-bar span:nth-of-type(2) {
+    text-transform: lowercase;
+    font-weight: 500;
+    font-size: 16px;
+}
+
 #content #containerMain #containerLeft h5 {
+    font-weight: 500;
+    font-size: 16px;
     color: gray;
 }
 
 #content #containerMain #containerLeft #skillHtml #skillaluno {
     width: 80%;
-    background-color: #2196F3;
+    background-color: #259cd9;
     border-radius: 10px;
     font-size: x-small;
-    margin-top: 10px;
 }
 
 #content #containerMain #containerLeft #skillHtml #skillturma {
@@ -170,25 +217,25 @@ a {
     background-color: #E53772;
     border-radius: 10px;
     font-size: x-small;
-    margin-top: 10px;
 }
 
 #content #containerMain #containerLeft #skillHtml #skillaluno span {
-    color: #2196F3;
+    color: #259cd9;
     padding-left: 105%;
+    text-transform: lowercase;
 }
 
 #content #containerMain #containerLeft #skillHtml #skillturma span {
     color: #E53772;
     padding-left: 105%;
+    text-transform: lowercase;
 }
 
 #content #containerMain #containerLeft #skillManipulacao_imagem #skillaluno {
     width: 50%;
-    background-color: #2196F3;
+    background-color: #259cd9;
     border-radius: 10px;
     font-size: x-small;
-    margin-top: 10px;
 }
 
 #content #containerMain #containerLeft #skillManipulacao_imagem #skillturma {
@@ -196,11 +243,10 @@ a {
     background-color: #E53772;
     border-radius: 10px;
     font-size: x-small;
-    margin-top: 10px;
 }
 
 #content #containerMain #containerLeft #skillManipulacao_imagem #skillaluno span {
-    color: #2196F3;
+    color: #259cd9;
     padding-left: 105%;
 }
 
@@ -211,10 +257,9 @@ a {
 
 #content #containerMain #containerLeft #skillPrototipagem #skillaluno {
     width: 90%;
-    background-color: #2196F3;
+    background-color: #259cd9;
     border-radius: 10px;
     font-size: x-small;
-    margin-top: 10px;
 }
 
 #content #containerMain #containerLeft #skillPrototipagem #skillturma {
@@ -222,11 +267,10 @@ a {
     background-color: #E53772;
     border-radius: 10px;
     font-size: x-small;
-    margin-top: 10px;
 }
 
 #content #containerMain #containerLeft #skillPrototipagem #skillaluno span {
-    color: #2196F3;
+    color: #259cd9;
     padding-left: 105%;
 }
 
@@ -237,10 +281,9 @@ a {
 
 #content #containerMain #containerLeft #skillIlustracao #skillaluno {
     width: 63%;
-    background-color: #2196F3;
+    background-color: #259cd9;
     border-radius: 10px;
     font-size: x-small;
-    margin-top: 10px;
 }
 
 #content #containerMain #containerLeft #skillIlustracao #skillturma {
@@ -248,11 +291,10 @@ a {
     background-color: #E53772;
     border-radius: 10px;
     font-size: x-small;
-    margin-top: 10px;
 }
 
 #content #containerMain #containerLeft #skillIlustracao #skillaluno span {
-    color: #2196F3;
+    color: #259cd9;
     padding-left: 105%;
 }
 
@@ -263,10 +305,9 @@ a {
 
 #content #containerMain #containerLeft #skillWireframe #skillaluno {
     width: 63%;
-    background-color: #2196F3;
+    background-color: #259cd9;
     border-radius: 10px;
     font-size: x-small;
-    margin-top: 10px;
 }
 
 #content #containerMain #containerLeft #skillWireframe #skillturma {
@@ -274,11 +315,10 @@ a {
     background-color: #E53772;
     border-radius: 10px;
     font-size: x-small;
-    margin-top: 10px;
 }
 
 #content #containerMain #containerLeft #skillWireframe #skillaluno span {
-    color: #2196F3;
+    color: #259cd9;
     padding-left: 105%;
 }
 
@@ -299,24 +339,42 @@ a {
     flex-direction: column;
 }
 
+#containerTopStudents .profiles {
+    display: flex;
+    justify-content: space-around;
+}
+
 #content #containerMain #containerRight #containerTopStudents #moldura-skill {
     display: inline-block;
+    text-align: center;
 }
 
-#content #containerMain #containerRight #containerTopStudents h5 {
-    padding-left: 45px;
+#containerTopStudents .box-title {
+    margin-bottom: 30px;
 }
 
-#content #containerMain #containerRight #containerTopStudents h6 {
-    padding-left: 85px;
+#containerTopStudents .circle-border {
+    margin-bottom: 30px;
+}
+
+#containerTopStudents h5 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#moldura-skill h6 {
+    font-size: 14px;
+    font-weight: 500;
+    color: gray;
 }
 
 .circle {
     flex: 2;
     background-color: #aaa;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 110px;
+    height: 110px;
     overflow: hidden;
     display: inline-block;
     margin: 0px 0px 0px 0px;
@@ -324,11 +382,8 @@ a {
 
 
 .circle img {
-    flex: 1;
-    display: flex;
-    bottom: 0;s
-    width: 20%;
-    padding-top: 0px;
+    width: 110px;
+    height: 110px;
 }
 
 #content #containerMain #containerRight #containerSkills {
@@ -346,6 +401,29 @@ a {
     flex: 1;
     display: flex;
     flex-direction: column;
+}
+
+#hardSkills .box-title {
+    margin-bottom: 50px;
+}
+
+#hardSkills span {
+    font-weight: 500;
+    color: #E53772;
+}
+
+#softSkills .skill {
+    background-color: #259cd9;
+    display: inline-block;
+    margin: 0 15px 15px 0;
+    padding: 10px;
+    
+    border-radius: 5px;
+    color: #fff;
+}
+
+#softSkills h5 {
+    margin-bottom: 50px;
 }
 
 #content #containerSubjects {
@@ -374,8 +452,9 @@ a {
 }
 
 #footer #about p {
+    margin-bottom: 10px;
     font-size: 13px;
-    line-height: 1px;
+    line-height: 1.5;
     color: #fff;
 }
 
@@ -387,8 +466,8 @@ a {
 }
 
 #modal-overlay {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     position: absolute;
     background-color: rgb(51, 51, 51, 0.8);
     display: flex;
@@ -398,11 +477,11 @@ a {
 }
 
 #modal {
-    width: 35vw;
-    height: 60vh;
+    width: 660px;
+    height: 550px;
     background-color: #fff;
     border-radius: 20px;
-    padding: 20px;
+    padding: 30px 40px;
     box-sizing: border-box;
 }
 
@@ -419,15 +498,15 @@ a {
     background-color: #fff;
     height: 100%;
     border-radius: 15px;
-    padding: 20px;
+    padding: 20px 30px;
     box-sizing: border-box;
     color: #333;
     margin: 10px;
-    flex-direction: column;
+    /* flex-direction: column; */
     flex: 1;
 }
 
 .shadow {
-    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12)
+    /* box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12) */
 
 }
