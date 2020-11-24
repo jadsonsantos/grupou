@@ -468,7 +468,9 @@ a {
 #modal-overlay {
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: rgb(51, 51, 51, 0.8);
     display: flex;
     justify-content: center;

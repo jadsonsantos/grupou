@@ -24,7 +24,7 @@
 
 .modal-header .stopwatch .countdown {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 36px;
 }
 
 .modal-header .stopwatch .circle-content {
@@ -108,6 +108,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    visibility: hidden;
     text-align: center;
 
     padding: 0 35px;
@@ -126,4 +127,49 @@
 
 .modal-feedback .hit-percentage {
     font-size: 38px;
+}
+
+
+/* INTERAÇÕES */
+
+.option:after {
+    float: right;
+}
+
+.option.selected {
+    border-color: var(--pink-color);
+}
+
+.option.selected:after {
+    content: '\2715';
+    color: var(--pink-color);
+}
+
+.option.selected span {
+    color: var(--pink-color);
+}
+
+.finished-question .option.correct-answer {
+    border-color: var(--green-color);
+}
+
+.finished-question .option.correct-answer:after {
+    content: '\2713';
+    color: var(--green-color);
+}
+
+.finished-question .option.correct-answer span {
+    color: var(--green-color);
+}
+
+.finished-question .option:not(.selected, .correct-answer) {
+    opacity: .5;
+}
+
+.finished-question .modal-feedback {
+    visibility: visible;
+}
+
+.finished-question .stopwatch {
+    visibility: hidden;
 }
