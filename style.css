@@ -6,6 +6,7 @@
 @import 'css/subjects.css';
 @import 'css/score.css';
 @import 'css/modal.css';
+@import 'css/geral.css';
 
 
 
@@ -412,13 +413,14 @@ a {
     color: #E53772;
 }
 
-#softSkills .skill {
+ul .skill {
     background-color: #259cd9;
     display: inline-block;
     margin: 0 15px 15px 0;
     padding: 10px;
     
     border-radius: 5px;
+    font-size: 14px;
     color: #fff;
 }
 
@@ -427,7 +429,6 @@ a {
 }
 
 #content #containerSubjects {
-    flex: 1;
     display: flex;
     min-height: 300px;
 }

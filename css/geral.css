@@ -1,0 +1,27 @@
+#content header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-btn {
+    margin: 70px 10px 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50px;
+
+    background-color: var(--pink-color);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+
+    font-size: 14px;
+    font-weight: 500;
+    
+    cursor: pointer;
+    transition: all ease .2s;
+}
+
+.main-btn:hover {
+    opacity: .9;
+}
