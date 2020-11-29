@@ -1,0 +1,61 @@
+.skills-list h5 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: gray;
+}
+
+#containerSubjects .disciplina {
+    padding: 0;
+    height: auto;
+}
+
+.disciplina > * {
+    padding: 0 30px;
+}
+
+.disciplina header {
+    padding-top: 20px;
+}
+
+.disciplina footer {
+    margin-top: 10px;
+    padding: 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    background-color: #f1f1f1;
+}
+
+.tasks-status {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tasks-status h6 {
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.tasks-status .cta {
+    padding: 8px;
+    border: 2px solid var(--pink-color);
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--pink-color);
+
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.tasks-status .cta:hover {
+    background-color: var(--pink-color);
+    color: #fff;
+}
+
+.tasks-summary h6 {
+    margin-bottom: 0;
+}
